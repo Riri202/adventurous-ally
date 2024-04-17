@@ -103,6 +103,8 @@
 
 .destinations-desc-img {
   float: right;
+  width: 500px;
+  height: 350px;
 }
 
 #destinations-main-desc {

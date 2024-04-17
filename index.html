@@ -4,7 +4,8 @@
     <title>Adventurous Ally & Travel Blog</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" media="screen and (min-width:481px)"  href="css/home.css" />
+    <link rel="stylesheet" media="screen and (min-width:0px) and (max-width:480px)"  href="css/home-mobile.css" />
   </head>
 
   <body id="home-body">
@@ -17,7 +18,7 @@
       <nav id="home-nav">
         <ul>
           <li>
-            <a href="home.html"
+            <a href="index.html"
               ><img
                 src="images/icons8-home.svg"
                 width="15px"
@@ -79,7 +80,7 @@
         </ul>
       </nav>
       <main id="home-main">
-        <h2>Welcome to Adventurous Ally</h2>
+        <h2 id="welcome-header">Welcome to Adventurous Ally</h2>
         <p id="home-main-desc" class="">
           This blog is your ultimate destination for adventure, discovery, and
           inspiration! Embark on a journey with us as we explore the world's
@@ -102,12 +103,12 @@
           to navigating foreign cultures, arm yourself with the knowledge you
           need to make every trip a breeze.
         </p>
-        <div id="reserve-form">
+        <form id="reserve-form">
           <h2>Book a discovery call with our team</h2>
-          <input class="reserve-input" type="text" placeholder="Name" />
-          <input class="reserve-input" type="text" placeholder="Email" />
-          <button class="reserve-btn">Book NOW</button>
-        </div>
+          <input id="client-name" class="reserve-input" type="text" placeholder="Name" />
+          <input id="client-email" class="reserve-input" type="text" placeholder="Email" />
+          <button type="button" class="reserve-btn">Book NOW</button>
+        </form>
       </main>
     </div>
     <footer>
@@ -122,8 +123,8 @@
       <div id="footer-2">
         <h3>Quick Links</h3>
         <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="webpages/blog">Blog</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="webpages/blog.html">Blog</a></li>
           <li><a href="webpages/travel-resources">Resources</a></li>
           <li><a href="webpages/faq.html">FAQ</a></li>
         </ul>
@@ -139,5 +140,6 @@
         <button class="footer-btn">SUBSCRIBE NOW</button>
       </div>
     </footer>
+    <script src="js/index.js"></script>
   </body>
 </html>

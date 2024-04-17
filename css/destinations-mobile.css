@@ -1,7 +1,7 @@
 
-/* Blog Styles Start */
+/* Destination And More Styles Start */
 
-#blog-body {
+#destinations-body {
     margin: 0px;
     font-family: "Lato", sans-serif;
     background-color: #faf9f6;
@@ -12,37 +12,39 @@
     overflow-x: hidden;
   }
   
-  #blog {
+  #destinations {
     display: flex;
     flex-direction: row;
     align-items: stretch;
     justify-content: space-between;
   }
   
-  #blog-main {
+  #destinations-main {
     flex: 1;
     background-color: #fff;
     margin-left: 15px;
     padding: 25px;
   }
   
-  #blog-nav {
+  #destinations-nav {
     min-height: 70vh;
     min-width: 20%;
     background-color: #fff;
     position: relative;
   }
   
-  #blog-nav ul, #footer-2 ul {
+  #destinations-nav ul, #footer-2 ul {
     padding-left: 0px;
   }
   
-  #blog-nav ul li, #footer-2 ul li {
+  #destinations-nav ul li, #footer-2 ul li {
     list-style: none;
-    padding: 10px 10px 10px 40px;
+    padding: 5px;
+    font-size: 10px;
+    margin-top: -5px;
   }
   
-  #blog-nav ul li a {
+  #destinations-nav ul li a {
     text-decoration: none;
     color: black;
   }
@@ -51,13 +53,13 @@
     color: #717171
   }
   
-  #blog-nav ul li a img{
+  #destinations-nav ul li a img{
     text-decoration: none;
     color: black;
-    margin-right: 10px;
+    margin-right: 8px;
   }
   
-  #blog-nav ul li:hover {
+  #destinations-nav ul li:hover {
     background-color: #eee;
     height: 25px;
     border-bottom: 2px solid transparent;
@@ -66,7 +68,7 @@
     cursor: pointer;
   }
   
-  #blog-header {
+  #destinations-header {
     background-image: url("../images/destinations-bg.jpg");
     background-size: cover;
     background-position: center;
@@ -77,12 +79,12 @@
     margin-bottom: 15px;
   }
   
-  #blog-header h1 {
+  #destinations-header h1 {
     line-height: normal;
     margin: 0px;
     background-color: rgba(0, 0, 0, 0.4);
     letter-spacing: 1px;
-    font-size: 3em;
+    font-size: 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,7 +94,7 @@
     width: 100%;
   }
   
-  #blog-header span {
+  #destinations-header span {
     color: palevioletred;
     display: block;
     font-size: small;
@@ -101,40 +103,78 @@
       Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   }
   
-  #blog-section-1 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 22px;
+  .destinations-desc-img {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 40px;
   }
   
-  .blog-section-11 {
+  #destinations-main-desc {
+    overflow: auto;
+    font-size: 14px;
+  }
+  
+  #destinations-desc {
+    overflow: auto;
+  }
+  
+  #destinations-section-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    gap: 20px;
+  }
+  
+  .destinations-section-11 {
     border-radius: 10px;
     border: 1px solid #eaeaea;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     height: 100%;
-    margin-right: 10px;
+    width: 100%;
+    /* margin-right: 10px; */
   }
   
-  .blog-section-11 img {
+  .destinations-section-11 img {
     border-radius: 10px 10px 0 0;
     background-size: cover;
   }
   
-  .blog-text {
+  .destinations-text {
     padding: 10px 25px;
     font-weight: 300;
-    height: 100px;
-    text-align: center;
-    /* max-width: 200px; */
+    height: 200px;
+    max-width: 200px;
     clear: both;
+    font-size: 14px;
   }
   
   h2 {
     color: palevioletred;
-    margin-top: 50px;
+    margin-top: 20px;
+    font-size: 20px
+  }
+
+  h3 {
+    font-size: 16px;
   }
   
-  .blog-bottom {
+  .destinations-btn {
+    padding: 10px 20px;
+    border: none;
+    float: right;
+    margin-bottom: 10px;
+    cursor: pointer;
+    margin-right: 25px;
+    color: white;
+    background-color: palevioletred;
+  }
+  
+  .destinations-btn:hover {
+    background-color: rgb(236, 79, 105);
+  }
+  
+  .destinations-bottom {
     border-top: 1px solid #eaeaea;
     padding: 10px;
     clear: both;
@@ -142,6 +182,14 @@
     font-weight: 300;
     text-align: center;
     line-height: normal;
+  }
+  
+  #accomodation {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between;
+    align-items: start; */
+    width: 100%;
   }
   
   .food-acc-img {
@@ -152,51 +200,59 @@
   .left-border-pink {
     border-left: 5px solid pink;
     padding: 0px 25px 25px 25px;
+    font-size: 12px;
   }
   
   .left-indent {
     margin-left: 40px;
   }
   
-  footer {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      padding: 40px;
-      background-color: #F8F8F8;
+  .accomodation-1 {
+    height: 100%;
+    width: 100%;
+    /* margin-right: 10px; */
+  }
   
+  .accomodation-main-desc {
+    width: 100%;
+    text-overflow: ellipsis;
+    font-size: 14px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f8f8;
   }
   
   #footer-1 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
-  #footer-1, #footer-2{
-      border-right: 1px solid #eaeaea;
-      text-align: center;
-      width: 20%;
-  
-  }
-  
+  #footer-1,
   #footer-2 {
-  padding-right: 60px;
+    text-align: center;
+    width: 100%;
   }
   
   #footer-3 {
-      width: 40%;
+    /* width: 60%; */
+    margin: 20px;
   }
   
   .footer-input {
-  display: block;
-  border: none;
-  background-color: #fff;
-  margin: 10px 10px 10px 0;
-  padding: 10px;
-  border-radius: 5px;
-  width: 100%;
+    display: block;
+    border: none;
+    background-color: #fff;
+    margin: 10px 10px 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
   }
   
   .footer-btn {
@@ -206,13 +262,6 @@
   border-radius: 20px;
   padding: 10px;
   width: 100%;
-  }
-
-  #cursive {
-    font-family: Brush Script MT, Brush Script Std, cursive;
-    font-weight: 100;
-    font-size: 40px;
-    margin-right: 5px;
   }
   
   /* Destination And More Styles End */

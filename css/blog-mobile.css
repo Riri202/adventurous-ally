@@ -39,8 +39,9 @@
   
   #blog-nav ul li, #footer-2 ul li {
     list-style: none;
-    padding: 10px 10px 10px 40px;
-  }
+    padding: 5px;
+    font-size: 10px;
+    margin-top: -5px;  }
   
   #blog-nav ul li a {
     text-decoration: none;
@@ -54,7 +55,7 @@
   #blog-nav ul li a img{
     text-decoration: none;
     color: black;
-    margin-right: 10px;
+    margin-right: 8px;
   }
   
   #blog-nav ul li:hover {
@@ -82,7 +83,7 @@
     margin: 0px;
     background-color: rgba(0, 0, 0, 0.4);
     letter-spacing: 1px;
-    font-size: 3em;
+    font-size: 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,7 +104,7 @@
   
   #blog-section-1 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 22px;
   }
   
@@ -125,20 +126,22 @@
     font-weight: 300;
     height: 100px;
     text-align: center;
+    font-size: 14px;
     /* max-width: 200px; */
     clear: both;
   }
   
   h2 {
     color: palevioletred;
-    margin-top: 50px;
+    margin-top: 20px;
+    font-size: 20px;
   }
   
   .blog-bottom {
     border-top: 1px solid #eaeaea;
     padding: 10px;
     clear: both;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300;
     text-align: center;
     line-height: normal;
@@ -159,44 +162,40 @@
   }
   
   footer {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      padding: 40px;
-      background-color: #F8F8F8;
-  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f8f8;
   }
   
   #footer-1 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
-  #footer-1, #footer-2{
-      border-right: 1px solid #eaeaea;
-      text-align: center;
-      width: 20%;
-  
-  }
-  
+  #footer-1,
   #footer-2 {
-  padding-right: 60px;
+    text-align: center;
+    width: 100%;
   }
   
   #footer-3 {
-      width: 40%;
+    /* width: 60%; */
+    margin: 20px;
   }
   
   .footer-input {
-  display: block;
-  border: none;
-  background-color: #fff;
-  margin: 10px 10px 10px 0;
-  padding: 10px;
-  border-radius: 5px;
-  width: 100%;
+    display: block;
+    border: none;
+    background-color: #fff;
+    margin: 10px 10px 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
   }
   
   .footer-btn {
@@ -215,6 +214,6 @@
     margin-right: 5px;
   }
   
-  /* Destination And More Styles End */
+  /* Blog Styles End */
   
   
